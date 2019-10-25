@@ -5,8 +5,7 @@
 }
 
 .nav-container {
-    width: 1180px;
-    background-color: chartreuse;
+    width: 1300px;
     height: 100%;
     margin: auto;
 
@@ -18,10 +17,28 @@
     padding: 0 10px;
 }
 
+.nav-container h1 {
+    font-size: 80px;
+}
+
 .nav-menu {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    
+}
+
+.nav-menu a {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link {
+    margin-right: 50px;
+    font-size: 28px !important;
 }

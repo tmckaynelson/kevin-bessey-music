@@ -1,0 +1,44 @@
+.tour-container {
+    width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-container h3 {
+    font-size: 50px;
+    padding: 10px;
+    border-bottom: #ababab 1px solid;
+}
+
+.tour {
+    font-size: 30px;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour tr {
+    width: 100%;
+    margin-bottom: 25px;
+    border-bottom: #ababab 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tour tr:last-child {
+    border: none;
+}
+
+.tour td {
+    margin-left: 25px;
+}
+
