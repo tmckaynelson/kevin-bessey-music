@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import './Tour.css'
 
 export default function Tour() {
+
+    useEffect(() => {
+        
+    }, [])
+
     return (
         <div className="tour-container">
             <h3>TOUR</h3>

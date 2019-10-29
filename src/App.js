@@ -1,26 +1,27 @@
-import React from 'react';
+import React, { useState, useEffec} from 'react'
+import { Switch, Route } from 'react-router-dom'
 
 import Nav from './components/Nav'
-import Tour from './components/Tour'
-
-import banner from './images/ThePatientBanner.jpg'
+import Home from './components/Home'
+import Admin from './components/Admin'
 
 import './reset.css'
-import './App.css';
+import './App.css'
 
 function App() {
+
+  const [ user, setUser ] = useState(''); // hooks used to set state to keep track if admin is logged in
+  
+
   return (
     <div className="App">
-      <Nav />
-      <div className="banner-img"> 
-        {/* <img src={ banner } alt="The Patient banner" /> */}
-      </div>
-      <div className="iframe">
-        {<iframe src="https://open.spotify.com/embed/track/0N1DnRp0d5PdOqFvAxLgTB" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>}
-      </div>
-      <Tour />
+      <Nav user={ user }/>
+      <Switch>
+        <Route exact path="/" component={ Home } />
+        <Route path="/admin" render={ () => <Admin user={ user } setUser={ setUser }/> } /> {/* render is used to allow props to be passed down */}
+      </Switch>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
