@@ -27,6 +27,7 @@ app.use(session({
         maxAge: 36000
     }
 }))
+app.use(express.static(`${__dirname}/../build`))
 
 // set up database
 massive(CONNECTION_STRING)
