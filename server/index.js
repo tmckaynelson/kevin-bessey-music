@@ -17,6 +17,7 @@ const {
 const app = express()
 
 // tlm
+app.use( express.static( `${__dirname}/../build` ) )
 app.use(cors())
 app.use(express.json())
 app.use(session({
@@ -27,7 +28,6 @@ app.use(session({
         maxAge: 36000
     }
 }))
-app.use(express.static(`${__dirname}/../build`))
 
 // set up database
 massive(CONNECTION_STRING)
