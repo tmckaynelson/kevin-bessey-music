@@ -44,6 +44,11 @@ app.post('/api/login', authCtrl.login)
 app.post('/api/register', authCtrl.register)
 app.put('/api/edit', authCtrl.editPassword)
 
+app.post('/api/tour', tourCtrl.createTour)
+app.get('/api/tour', tourCtrl.getTours)
+app.put('/api/tour/:id', tourCtrl.editTour)
+app.delete('/api/tour/:id', tourCtrl.deleteTour)
+
 
 app.listen(8080, ()=> {
     console.log('server running')
