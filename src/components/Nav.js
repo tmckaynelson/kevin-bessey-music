@@ -6,7 +6,7 @@ import './Nav.css'
 
 export default function Nav(props) {
 
-    const [ slide, setSlide ] = useState(true)
+    const [ slide, setSlide ] = useState(false)
 
     const socialIcons = (
         <>
