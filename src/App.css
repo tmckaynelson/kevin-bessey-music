@@ -6,23 +6,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.banner {
-  width: 100%;
-  margin: 50px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .banner-img {
   width: 100%;
-  height: 70vh;
+  height: 800px;
   background-image: url('./images/patientBanner3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: -17px;
 }
 
 .iframe {
@@ -36,4 +26,97 @@ body {
 iframe {
   width: 500px;
   height: 80px;
+}
+
+@media (max-width: 2250px) {
+
+  .banner-img {
+    height: 700px;
+  }
+}
+
+@media (max-width: 1900px) {
+
+  .banner-img {
+    height: 600px;
+  }
+}
+
+@media (max-width: 1460px) {
+
+  .banner-img {
+    height: 525px;
+  }
+}
+
+@media (max-width: 1290px) {
+
+  .banner-img {
+    height: 475px;
+  }
+}
+
+@media (max-width: 1165px) {
+
+  .banner-img {
+    height: 410px;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .banner-img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .banner-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 740px) {
+
+  .banner-img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 610px) {
+
+  .banner-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 540px) {
+
+  .iframe {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .banner-img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .banner-img {
+    height: 130px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .banner-img {
+    height: 110px;
+  }
 }

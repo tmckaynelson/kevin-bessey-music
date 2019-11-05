@@ -1,5 +1,5 @@
 .tour-container {
-    width: 1300px;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -42,3 +42,28 @@
     margin-left: 25px;
 }
 
+@media (max-width: 1000px) {
+
+    .tour-container h3 {
+        font-size: 33px;
+    }
+
+    .tour {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .tour-container h3 {
+        font-size: 26px;
+    }
+
+    .tour {
+        font-size: 16px;
+    }
+
+    .tour td {
+        margin-left: 15px;
+    }
+}
