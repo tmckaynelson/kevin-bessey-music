@@ -8,11 +8,12 @@ body {
 
 .banner-img {
   width: 100%;
-  height: 800px;
-  background-image: url('./images/patientBanner3.jpg');
+  height: 1200px;
+  background-image: url('./images/patientBanner2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-position-y: 0px;
 }
 
 .iframe {
@@ -31,63 +32,93 @@ iframe {
 @media (max-width: 2250px) {
 
   .banner-img {
-    height: 700px;
+    height: 1100px;
   }
 }
 
 @media (max-width: 1900px) {
 
   .banner-img {
-    height: 600px;
+    height: 1000px;
   }
 }
+
+@media (max-width: 1750px) {
+
+  .banner-img{
+    height: 950px;
+  }
+}
+
+@media (max-width: 1650px) {
+
+  .banner-img {
+    height: 900px;
+  }
+}
+
+@media (max-width: 1575px) {
+  
+  .banner-img {
+    height: 850px;
+  }
+}
+
+
 
 @media (max-width: 1460px) {
 
   .banner-img {
-    height: 525px;
+    height: 775px;
   }
 }
 
-@media (max-width: 1290px) {
+@media (max-width: 1340px) {
 
   .banner-img {
-    height: 475px;
+    height: 700px;
   }
 }
 
-@media (max-width: 1165px) {
+@media (max-width: 1180px) {
 
   .banner-img {
-    height: 410px;
+    height: 625px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .banner-img {
+    height: 550px;
   }
 }
 
 @media (max-width: 1000px) {
 
   .banner-img {
-    height: 350px;
+    height: 475px;
   }
 }
 
 @media (max-width: 850px) {
 
   .banner-img {
-    height: 300px;
+    height: 400px;
   }
 }
 
 @media (max-width: 740px) {
 
   .banner-img {
-    height: 250px;
+    height: 350px;
   }
 }
 
 @media (max-width: 610px) {
 
   .banner-img {
-    height: 200px;
+    height: 300px;
   }
 }
 
@@ -100,23 +131,23 @@ iframe {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 525px) {
 
   .banner-img {
-    height: 150px;
+    height: 250px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 445px) {
 
   .banner-img {
-    height: 130px;
+    height: 200px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
 
   .banner-img {
-    height: 110px;
+    height: 175px;
   }
 }

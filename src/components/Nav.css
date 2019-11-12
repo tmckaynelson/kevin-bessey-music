@@ -4,7 +4,7 @@
 }
 
 .nav-container {
-    width: 1300px;
+    width: 2400px;
     min-height: 100px;
     margin: auto;
 
@@ -81,6 +81,41 @@
     align-items: center;
     padding-bottom: 10px;
     width: 425px;
+}
+
+@media (max-width: 2400px) {
+
+    .nav-container {
+        width: 2200px;
+    }
+}
+
+@media (max-width: 2200px) {
+ 
+    .nav-container {
+        width: 2000px
+    }
+}
+
+@media (max-width: 2000px) {
+
+    .nav-container {
+        width: 1800px;
+    }
+}
+
+@media (max-width: 1800px) {
+    
+    .nav-container {
+        width: 1600px;
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .nav-container {
+        width: 1400px;
+    }
 }
 
 @media (max-width: 1400px) {
